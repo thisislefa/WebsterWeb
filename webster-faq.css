@@ -1,0 +1,179 @@
+/* * FAQ SPECIFIC STYLES
+         * Unique class prefix "fr-faq-" used to ensure isolation.
+         */
+        :root {
+            --fr-faq-bg-section: #f9f9f9; /* Very light grey background */
+            --fr-faq-bg-card: #ffffff;
+            --fr-faq-text-main: #111827;
+            --fr-faq-text-body: #4b5563;
+            --fr-faq-border-color: #e5e7eb;
+            --fr-faq-font: 'Inter Tight', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--fr-faq-font);
+            background-color: var(--fr-faq-bg-section);
+        }
+
+        /* Section Container */
+        .fr-faq-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 24px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        /* * LEFT COLUMN (Header) */
+        .fr-faq-header-col {
+            flex: 0 0 35%; /* Takes up roughly 35% of width */
+            position: sticky;
+            top: 40px; /* Stays visible if the list is long */
+        }
+
+        .fr-faq-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 6px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 999px;
+            color: var(--fr-faq-text-main);
+            margin-bottom: 24px;
+            background-color: transparent;
+        }
+
+        .fr-faq-title {
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: 1.05;
+            color: var(--fr-faq-text-main);
+            margin: 0;
+            letter-spacing: -0.03em;
+        }
+
+        /* * RIGHT COLUMN (Accordion List) */
+        .fr-faq-list-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+        }
+
+        /* Accordion Item */
+        .fr-faq-item {
+            background-color: var(--fr-faq-bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            /* Subtle transition for hover/active states */
+            transition: box-shadow 0.2s ease; 
+        }
+
+        /* Button/Trigger */
+        .fr-faq-trigger {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 32px;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            font-family: var(--fr-faq-font);
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--fr-faq-text-main);
+            line-height: 1.4;
+            transition: background-color 0.2s ease;
+        }
+
+        .fr-faq-trigger:hover {
+            background-color: #fafafa;
+        }
+
+        /* Icon Wrapper */
+        .fr-faq-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-left: 20px;
+            transition: transform 0.3s ease;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* SVG Icon styling */
+        .fr-faq-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: var(--fr-faq-text-main);
+            stroke-width: 2;
+        }
+
+        /* Answer/Content Area */
+        .fr-faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            padding: 0 32px; /* Initial side padding */
+        }
+        
+        .fr-faq-answer-inner {
+            color: var(--fr-faq-text-body);
+            font-size: 1rem;
+            line-height: 1.6;
+            padding-bottom: 24px; /* Only visible when expanded */
+        }
+
+        /* Active State Classes (Toggled by JS) */
+        .fr-faq-item.active {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .fr-faq-item.active .fr-faq-icon {
+            transform: rotate(45deg); /* Turns plus into X */
+        }
+
+        .fr-faq-item.active .fr-faq-answer {
+            max-height: 500px; /* Arbitrary large height */
+            /* Padding is handled by the inner element usually, 
+               but here we rely on the container transition */
+        }
+
+        /* * RESPONSIVE */
+        @media (max-width: 992px) {
+            .fr-faq-section {
+                flex-direction: column;
+                padding: 60px 24px;
+                gap: 40px;
+            }
+
+            .fr-faq-header-col {
+                width: 100%;
+                position: static;
+                margin-bottom: 20px;
+            }
+
+            .fr-faq-title {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .fr-faq-trigger {
+                padding: 20px;
+                font-size: 1.05rem;
+            }
+            .fr-faq-title {
+                font-size: 2.2rem;
+            }
+        }
