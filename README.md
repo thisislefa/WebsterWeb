@@ -1,12 +1,12 @@
-# Webster™ Website Template - Professional Documentation
+# Forerunner™ Website Template - Professional Documentation
 
 ## Project Overview
 
-**Webster™** is a premium website template designed for modern brands, creative agencies, and professional portfolios. This demonstration showcases advanced front-end development techniques, modular component architecture, and production-ready code patterns. The template represents a sophisticated approach to web design that balances aesthetic appeal with technical excellence.
+**Forerunner™** is a premium website template designed for modern brands, creative agencies, and professional portfolios. This demonstration showcases advanced front-end development techniques, modular component architecture, and production-ready code patterns. The template represents a sophisticated approach to web design that balances aesthetic appeal with technical excellence.
 
 ## Live Preview
 
-[View Live Demo](https://thisislefa.github.io/WebsterWeb)
+[View Live Demo](https://thisislefa.github.io/Forerunner)
 
 **Important Notice:** This is a demonstration version with limited functionality. For access to the complete template with full features, extended components, and professional support, please contact: **lefamjack@gmail.com**
 
@@ -157,7 +157,7 @@ For the complete template with all features, extended components, and profession
 
 ## Conclusion
 
-Webster™ represents a sophisticated approach to modern web development, balancing aesthetic excellence with technical precision. The template provides a foundation that can scale from simple portfolio sites to complex enterprise applications.
+Forerunner™ represents a sophisticated approach to modern web development, balancing aesthetic excellence with technical precision. The template provides a foundation that can scale from simple portfolio sites to complex enterprise applications.
 
 The modular architecture ensures maintainability, while the attention to detail in interaction design creates engaging user experiences. This demonstration illustrates the potential of the template, with the full version offering extended capabilities and professional support.
 
@@ -166,6 +166,7 @@ The modular architecture ensures maintainability, while the attention to detail 
 ---
 
 *Documentation Version: 1.0   
-Template Version: Webster™ 2025*
+Template Version: Forerunner™ 2025*
+
 
 
