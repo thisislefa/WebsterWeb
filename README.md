@@ -6,7 +6,7 @@
 
 ## Live Preview
 
-[View Live Demo](https://thisislefa.github.io/Forerunner)
+[View Live Demo](https://lefajmofokeng.github.io/Forerunner)
 
 **Important Notice:** This is a demonstration version with limited functionality. For access to the complete template with full features, extended components, and professional support, please contact: **lefamjack@gmail.com**
 
@@ -167,6 +167,7 @@ The modular architecture ensures maintainability, while the attention to detail 
 
 *Documentation Version: 1.0   
 Template Version: Forerunner™ 2025*
+
 
 
 
